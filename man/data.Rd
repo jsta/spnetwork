@@ -17,7 +17,7 @@ data(torontocentre)
 \note{ Distributed under the Ontario Open Data Licence
 (https://www.ontario.ca/page/open-government-licence-ontario) }
 
-\author{ Network selection done by Richard Ellison; imported from shapefiles using \link[rgdal]{readOGR} }
+\author{ Network selection done by Richard Ellison; imported from shapefiles using readOGR }
 
 \keyword{datasets}
 
