@@ -4,17 +4,18 @@
 \name{[}
 \alias{[}
 \alias{[,SpatialNetwork-method}
-\alias{as}
-\alias{coerce,SpatialNetwork,SpatialPointsDataFrame-method}
-\alias{coerce,SpatialNetwork,igraph-method}
-\alias{plot}
-\alias{plot,SpatialNetwork,missing-method}
 \alias{points.SpatialNetwork}
+\alias{summary}
+\alias{summary,SpatialNetwork-method}
 \alias{print.summary.SpatialNetwork}
 \alias{spTransform}
 \alias{spTransform,SpatialNetwork,ANY-method}
-\alias{summary}
-\alias{summary,SpatialNetwork-method}
+\alias{as}
+\alias{coerce,SpatialNetwork,SpatialPointsDataFrame-method}
+\alias{as}
+\alias{coerce,SpatialNetwork,igraph-method}
+\alias{plot}
+\alias{plot,SpatialNetwork,missing-method}
 \title{extract method for SpatialNetwork}
 \usage{
 \S4method{[}{SpatialNetwork}(x, i, j, ..., drop = TRUE)
@@ -72,4 +73,3 @@ library(sp)
 plot(tc, arrow_size = .5)
 points(tc)
 }
-

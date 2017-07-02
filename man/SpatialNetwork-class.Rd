@@ -2,11 +2,11 @@
 % Please edit documentation in R/Class-SpatialNetwork.R
 \docType{class}
 \name{SpatialNetwork-class}
-\alias{$,SpatialNetwork-method}
-\alias{SpatialNetwork}
 \alias{SpatialNetwork-class}
+\alias{SpatialNetwork}
 \alias{[[,SpatialNetwork,ANY,missing-method}
 \alias{[[<-,SpatialNetwork,ANY,missing-method}
+\alias{$,SpatialNetwork-method}
 \title{The SpatialNetwork class and constructor function}
 \usage{
 SpatialNetwork(sl, g, weight, weightfield, direction, zero)
@@ -47,6 +47,7 @@ note
    \item{\code{weightfield}}{character; describing the weight field used}
  }
 }
+
 \examples{
 library(sp) # Lines, SpatialLines
 l0 = cbind(c(1, 2), c(0, 0))
@@ -69,4 +70,3 @@ plot(sln@g)
 \author{
 Edzer Pebesma
 }
-

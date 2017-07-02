@@ -4,14 +4,15 @@
 \name{weightfield}
 \alias{weightfield}
 \alias{weights}
-\alias{weights,SpatialNetwork-method}
-\alias{weights.SpatialNetwork}
 \alias{weights<-}
-\alias{weights<-,SpatialNetwork,character,vector-method}
+\alias{weights,SpatialNetwork-method}
 \alias{weights<-,SpatialNetwork,character-method,}
+\alias{weights<-,SpatialNetwork,vector-method,}
+\alias{weights<-,SpatialNetwork,character,vector-method}
+\alias{weights.SpatialNetwork}
 \alias{weights<-,SpatialNetwork,missing,character-method}
 \alias{weights<-,SpatialNetwork,missing,vector-method}
-\alias{weights<-,SpatialNetwork,vector-method,}
+\alias{weights<-,SpatialNetwork,character,vector-method}
 \title{Get or set weight field in SpatialNetwork}
 \usage{
 weights(object, ...)
@@ -47,6 +48,7 @@ SpatialNetwork. When changing the value of weightfield, the weights
 of the graph network are updated with the values of the corresponding
 variables.
 }
+
 \examples{
 library(sp) # Lines, SpatialLines
 l0 = cbind(c(1, 2), c(0, 0))
@@ -64,4 +66,3 @@ weights(sln) = 2 * sln$length
 weights(sln) = "length"
 weights(sln, "randomweights") = runif(nrow(sln))
 }
-
