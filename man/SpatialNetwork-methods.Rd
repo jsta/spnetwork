@@ -12,7 +12,6 @@
 \alias{spTransform,SpatialNetwork,ANY-method}
 \alias{as}
 \alias{coerce,SpatialNetwork,SpatialPointsDataFrame-method}
-\alias{as}
 \alias{coerce,SpatialNetwork,igraph-method}
 \alias{plot}
 \alias{plot,SpatialNetwork,missing-method}
@@ -73,3 +72,4 @@ library(sp)
 plot(tc, arrow_size = .5)
 points(tc)
 }
+\concept{SpatialNetwork}
