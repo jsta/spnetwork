@@ -29,10 +29,25 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../reference/index.html">Reference</a>
+  <a href="..//index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
 </li>
 <li>
-  <a href="../articles/index.html">Articles</a>
+  <a href="../reference/index.html">Reference</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Articles
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li>
+      <a href="../articles/spn.html">UNKNOWN TITLE</a>
+    </li>
+  </ul>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -80,8 +95,8 @@ l4 =<span class="st"> </span><span class="kw">cbind</span>(<span class="kw">c</s
 l5 =<span class="st"> </span><span class="kw">cbind</span>(<span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">2</span>), <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">3</span>))
 l6 =<span class="st"> </span><span class="kw">cbind</span>(<span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>), <span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">4</span>))
 <span class="kw">library</span>(sp)
-L1 =<span class="st"> </span><span class="cf">function</span>(l) <span class="kw">Lines</span>(<span class="kw">list</span>(<span class="kw">Line</span>(l)), <span class="kw">as.character</span>(<span class="kw">substitute</span>(l)))
-sl =<span class="st"> </span><span class="kw">SpatialLines</span>(<span class="kw">list</span>(<span class="kw">L1</span>(l0), <span class="kw">L1</span>(l1), <span class="kw">L1</span>(l2), <span class="kw">L1</span>(l3), <span class="kw">L1</span>(l4), <span class="kw">L1</span>(l5), <span class="kw">L1</span>(l6)))</code></pre></div>
+L1 =<span class="st"> </span><span class="cf">function</span>(l) <span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/Line">Lines</a></span>(<span class="kw">list</span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/Line">Line</a></span>(l)), <span class="kw">as.character</span>(<span class="kw">substitute</span>(l)))
+sl =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/SpatialLines">SpatialLines</a></span>(<span class="kw">list</span>(<span class="kw">L1</span>(l0), <span class="kw">L1</span>(l1), <span class="kw">L1</span>(l2), <span class="kw">L1</span>(l3), <span class="kw">L1</span>(l4), <span class="kw">L1</span>(l5), <span class="kw">L1</span>(l6)))</code></pre></div>
 <p>The class <code>SpatialNetwork</code>, which looks like</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(spnetwork)
 <span class="kw">showClass</span>(<span class="st">"SpatialNetwork"</span>)</code></pre></div>
@@ -136,12 +151,12 @@ sl =<span class="st"> </span><span class="kw">SpatialLines</span>(<span class="k
 ## 
 ##     union</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">g =<span class="st"> </span>sln<span class="op">@</span>g
-<span class="kw"><a href="../reference/SpatialNetwork-methods.html">plot</a></span>(<span class="kw">V</span>(g)<span class="op">$</span>x, <span class="kw">V</span>(g)<span class="op">$</span>y, <span class="dt">col =</span> <span class="kw">V</span>(g)<span class="op">$</span>n, <span class="dt">pch =</span> <span class="dv">16</span>, <span class="dt">cex =</span> <span class="dv">2</span>, <span class="dt">asp =</span> <span class="dv">1</span>)
+<span class="kw"><a href="../reference/SpatialNetwork-methods.html">plot</a></span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/V">V</a></span>(g)<span class="op">$</span>x, <span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/V">V</a></span>(g)<span class="op">$</span>y, <span class="dt">col =</span> <span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/V">V</a></span>(g)<span class="op">$</span>n, <span class="dt">pch =</span> <span class="dv">16</span>, <span class="dt">cex =</span> <span class="dv">2</span>, <span class="dt">asp =</span> <span class="dv">1</span>)
 <span class="kw">lines</span>(sl)
-<span class="kw">text</span>(<span class="kw">V</span>(g)<span class="op">$</span>x, <span class="kw">V</span>(g)<span class="op">$</span>y, <span class="kw">as.character</span>(<span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(<span class="kw">V</span>(g))), <span class="dt">pos =</span> <span class="dv">4</span>)</code></pre></div>
+<span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/gridlines">text</a></span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/V">V</a></span>(g)<span class="op">$</span>x, <span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/V">V</a></span>(g)<span class="op">$</span>y, <span class="kw">as.character</span>(<span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/V">V</a></span>(g))), <span class="dt">pos =</span> <span class="dv">4</span>)</code></pre></div>
 <p><img src="spn_files/figure-html/unnamed-chunk-4-1.png" width="672"> where node color indicates the number of edges it is shared by.</p>
 <p>Here, <code>V(g)$x</code> is the <code>x</code> attribute of the graph vertices (<code>V</code>); similarly,</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">E</span>(g)<span class="op">$</span>weight</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/E">E</a></span>(g)<span class="op">$</span>weight</code></pre></div>
 <pre><code>## [1] 1.000000 2.000000 2.000000 2.414214 2.414214 3.000000 1.414214</code></pre>
 <p>retrieves graph edge attributes.</p>
 <p>We can let <code>igraph</code> plot this graph, as in</p>
@@ -185,7 +200,7 @@ sl =<span class="st"> </span><span class="kw">SpatialLines</span>(<span class="k
 ##  Max.   :7.000</code></pre>
 <p>we now see that the number of graph edges (9) exceeds the number of line segments (7), by a number equal to the number of two-way streets (2). Each graph edge has an index indicating which lines (links) correspond to it:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">g =<span class="st"> </span>sln<span class="op">@</span>g
-<span class="kw">E</span>(g)<span class="op">$</span>link_index</code></pre></div>
+<span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/E">E</a></span>(g)<span class="op">$</span>link_index</code></pre></div>
 <pre><code>## [1] 1 2 3 4 5 6 7 1 2</code></pre>
 <p>The <code>igraph</code> plot of this graph now indicates edges direction:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="../reference/SpatialNetwork-methods.html">plot</a></span>(g)</code></pre></div>
@@ -203,23 +218,23 @@ sl =<span class="st"> </span><span class="kw">SpatialLines</span>(<span class="k
 <p>The following function converts a set of points into a SpatialPolygons or into a SpatialLines object:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dd &lt;-<span class="st"> </span><span class="cf">function</span>(x, ..., <span class="dt">to =</span> <span class="st">"polygons"</span>) {
     <span class="kw">stopifnot</span>(<span class="kw">is</span>(x, <span class="st">"Spatial"</span>))
-    cc =<span class="st"> </span><span class="kw">coordinates</span>(x)
-    dd =<span class="st"> </span><span class="kw">deldir</span>(<span class="kw">list</span>(<span class="dt">x =</span> cc[, <span class="dv">1</span>], <span class="dt">y =</span> cc[, <span class="dv">2</span>]), ...)
+    cc =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/coordinates">coordinates</a></span>(x)
+    dd =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/deldir/topics/deldir">deldir</a></span>(<span class="kw">list</span>(<span class="dt">x =</span> cc[, <span class="dv">1</span>], <span class="dt">y =</span> cc[, <span class="dv">2</span>]), ...)
     <span class="cf">if</span> (to <span class="op">==</span><span class="st"> "polygons"</span>) {
-        tm =<span class="st"> </span><span class="kw">triMat</span>(dd)
-        fn =<span class="st"> </span><span class="cf">function</span>(i) <span class="kw">Polygons</span>(<span class="kw">list</span>(<span class="kw">Polygon</span>(<span class="kw">rbind</span>(cc[tm[<span class="kw">c</span>(i, i[<span class="dv">1</span>]),], ]))), i)
-        <span class="kw">SpatialPolygons</span>(<span class="kw">lapply</span>(<span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(tm), fn), <span class="dt">proj4string =</span> x<span class="op">@</span>proj4string)
+        tm =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/deldir/topics/triMat">triMat</a></span>(dd)
+        fn =<span class="st"> </span><span class="cf">function</span>(i) <span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/SpatialPolygons">Polygons</a></span>(<span class="kw">list</span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/SpatialPolygons">Polygon</a></span>(<span class="kw">rbind</span>(cc[tm[<span class="kw">c</span>(i, i[<span class="dv">1</span>]),], ]))), i)
+        <span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/SpatialPolygons">SpatialPolygons</a></span>(<span class="kw">lapply</span>(<span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(tm), fn), <span class="dt">proj4string =</span> x<span class="op">@</span>proj4string)
     } <span class="cf">else</span> <span class="cf">if</span> (to <span class="op">==</span><span class="st"> "lines"</span>) {
         segs =<span class="st"> </span>dd<span class="op">$</span>delsgs
-        fn =<span class="st"> </span><span class="cf">function</span>(i) <span class="kw">Lines</span>(<span class="kw">list</span>(<span class="kw">Line</span>(cc[<span class="kw">c</span>(segs[i, <span class="dv">5</span>], segs[i, <span class="dv">6</span>]), ])), i)
-        <span class="kw">SpatialLines</span>(<span class="kw">lapply</span>(<span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(segs), fn), <span class="dt">proj4string =</span> x<span class="op">@</span>proj4string)
+        fn =<span class="st"> </span><span class="cf">function</span>(i) <span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/Line">Lines</a></span>(<span class="kw">list</span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/Line">Line</a></span>(cc[<span class="kw">c</span>(segs[i, <span class="dv">5</span>], segs[i, <span class="dv">6</span>]), ])), i)
+        <span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/SpatialLines">SpatialLines</a></span>(<span class="kw">lapply</span>(<span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(segs), fn), <span class="dt">proj4string =</span> x<span class="op">@</span>proj4string)
     } <span class="cf">else</span> <span class="kw">stop</span>(<span class="st">"argument to should be polygons or lines"</span>)
 }</code></pre></div>
 <p>We’ll generate a set of</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">n =<span class="st"> </span><span class="dv">300</span></code></pre></div>
 <p>points in a unit square:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">5432</span>)
-pts =<span class="st"> </span><span class="kw">SpatialPoints</span>(<span class="kw">cbind</span>(<span class="dt">x =</span> <span class="kw">sort</span>(<span class="kw">runif</span>(n)), <span class="dt">y =</span> <span class="kw">runif</span>(n)))
+pts =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/SpatialPoints">SpatialPoints</a></span>(<span class="kw">cbind</span>(<span class="dt">x =</span> <span class="kw">sort</span>(<span class="kw">runif</span>(n)), <span class="dt">y =</span> <span class="kw">runif</span>(n)))
 sl =<span class="st"> </span><span class="kw">dd</span>(pts, <span class="dt">to =</span> <span class="st">"lines"</span>)</code></pre></div>
 <pre><code>## 
 ##      PLEASE NOTE:  The components "delsgs" and "summary" of the
@@ -237,15 +252,15 @@ sl =<span class="st"> </span><span class="kw">dd</span>(pts, <span class="dt">to
 <span class="kw">points</span>(net)</code></pre></div>
 <p><img src="spn_files/figure-html/unnamed-chunk-16-1.png" width="672"></p>
 <p>Now we compute the shortest path from the left-most point (1) to the right-most one (100):</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">path =<span class="st"> </span><span class="kw">get.shortest.paths</span>(net<span class="op">@</span>g, <span class="dv">1</span>, n, <span class="dt">output =</span> <span class="st">"both"</span>)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">path =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/distances">get.shortest.paths</a></span>(net<span class="op">@</span>g, <span class="dv">1</span>, n, <span class="dt">output =</span> <span class="st">"both"</span>)
 sp =<span class="st"> </span><span class="kw">as.vector</span>(path<span class="op">$</span>vpath[[<span class="dv">1</span>]])
-ids =<span class="st"> </span><span class="kw">as_ids</span>(path<span class="op">$</span>epath[[<span class="dv">1</span>]])</code></pre></div>
+ids =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/as_ids">as_ids</a></span>(path<span class="op">$</span>epath[[<span class="dv">1</span>]])</code></pre></div>
 <p>and plot it</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="../reference/SpatialNetwork-methods.html">plot</a></span>(net, <span class="dt">col =</span> <span class="st">'grey'</span>)
 sel =<span class="st"> </span>net[ids,]
 <span class="kw">lines</span>(sel, <span class="dt">col =</span> <span class="st">'red'</span>, <span class="dt">lwd =</span> <span class="dv">2</span>)
 <span class="kw">points</span>(sel)
-<span class="kw">text</span>(<span class="kw">V</span>(net<span class="op">@</span>g)<span class="op">$</span>x[<span class="kw">c</span>(<span class="dv">1</span>, n)], <span class="kw">V</span>(net<span class="op">@</span>g)<span class="op">$</span>y[<span class="kw">c</span>(<span class="dv">1</span>, n)], <span class="kw">c</span>(<span class="st">"begin"</span>, <span class="st">"end"</span>), <span class="dt">pos =</span> <span class="dv">4</span>)</code></pre></div>
+<span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/gridlines">text</a></span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/V">V</a></span>(net<span class="op">@</span>g)<span class="op">$</span>x[<span class="kw">c</span>(<span class="dv">1</span>, n)], <span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/V">V</a></span>(net<span class="op">@</span>g)<span class="op">$</span>y[<span class="kw">c</span>(<span class="dv">1</span>, n)], <span class="kw">c</span>(<span class="st">"begin"</span>, <span class="st">"end"</span>), <span class="dt">pos =</span> <span class="dv">4</span>)</code></pre></div>
 <p><img src="spn_files/figure-html/unnamed-chunk-18-1.png" width="672"></p>
 <p>Note that <code><a href="../reference/SpatialNetwork-methods.html">net[ids,]</a></code> subsets the <code>SpatialNetwork</code> object, including the graph structure:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="../reference/SpatialNetwork-methods.html">summary</a></span>(sel)</code></pre></div>
@@ -297,19 +312,19 @@ m =<span class="st"> </span><span class="kw">rbind</span>(
 <span class="kw">c</span>( <span class="op">-</span><span class="fl">75.70246</span>, <span class="fl">45.40728</span>),
 <span class="kw">c</span>( <span class="op">-</span><span class="fl">75.69669</span>, <span class="fl">45.42286</span>)
 )
-pts =<span class="st"> </span><span class="kw">SpatialPoints</span>(m, <span class="kw">CRS</span>(<span class="kw">proj4string</span>(oc)))
+pts =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/SpatialPoints">SpatialPoints</a></span>(m, <span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/CRS-class">CRS</a></span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/is.projected">proj4string</a></span>(oc)))
 <span class="kw">points</span>(pts, <span class="dt">col =</span> <span class="st">'orange'</span>, <span class="dt">pch =</span> <span class="dv">16</span>)
 <span class="co"># find nearest nodes:</span>
-oc.p =<span class="st"> </span><span class="kw"><a href="../reference/SpatialNetwork-methods.html">as</a></span>(oc, <span class="st">"SpatialPointsDataFrame"</span>)
-nearest =<span class="st"> </span><span class="kw">apply</span>(<span class="kw">spDists</span>(pts, oc.p), <span class="dv">1</span>, which.min)
+oc.p =<span class="st"> </span><span class="kw">as</span>(oc, <span class="st">"SpatialPointsDataFrame"</span>)
+nearest =<span class="st"> </span><span class="kw">apply</span>(<span class="kw"><a href="http://www.rdocumentation.org/packages/sp/topics/spDistsN1">spDists</a></span>(pts, oc.p), <span class="dv">1</span>, which.min)
 <span class="kw">points</span>(oc.p[nearest, ], <span class="dt">col =</span> <span class="st">'blue'</span>, <span class="dt">pch =</span> <span class="dv">16</span>)
-path =<span class="st"> </span><span class="kw">get.shortest.paths</span>(oc<span class="op">@</span>g, nearest[<span class="dv">1</span>], nearest[<span class="dv">2</span>], <span class="dt">output =</span> <span class="st">"both"</span>)
+path =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/distances">get.shortest.paths</a></span>(oc<span class="op">@</span>g, nearest[<span class="dv">1</span>], nearest[<span class="dv">2</span>], <span class="dt">output =</span> <span class="st">"both"</span>)
 sp =<span class="st"> </span><span class="kw">as.vector</span>(path<span class="op">$</span>vpath[[<span class="dv">1</span>]])
-ids =<span class="st"> </span><span class="kw">as_ids</span>(path<span class="op">$</span>epath[[<span class="dv">1</span>]])
+ids =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/as_ids">as_ids</a></span>(path<span class="op">$</span>epath[[<span class="dv">1</span>]])
 <span class="kw">points</span>(oc[,ids], <span class="dt">col =</span> <span class="st">'blue'</span>, <span class="dt">cex =</span> .<span class="dv">7</span>, <span class="dt">pch =</span> <span class="dv">16</span>)
-path =<span class="st"> </span><span class="kw">get.shortest.paths</span>(oc<span class="op">@</span>g, nearest[<span class="dv">2</span>], nearest[<span class="dv">1</span>], <span class="dt">output =</span> <span class="st">"both"</span>)
+path =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/distances">get.shortest.paths</a></span>(oc<span class="op">@</span>g, nearest[<span class="dv">2</span>], nearest[<span class="dv">1</span>], <span class="dt">output =</span> <span class="st">"both"</span>)
 <span class="co"># sp = as.vector(path$vpath[[1]])</span>
-ids =<span class="st"> </span><span class="kw">as_ids</span>(path<span class="op">$</span>epath[[<span class="dv">1</span>]])
+ids =<span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/igraph/topics/as_ids">as_ids</a></span>(path<span class="op">$</span>epath[[<span class="dv">1</span>]])
 <span class="kw">points</span>(oc[,ids], <span class="dt">col =</span> <span class="st">'red'</span>, <span class="dt">cex =</span> <span class="dv">1</span>, <span class="dt">pch =</span> <span class="dv">2</span>)</code></pre></div>
 <p><img src="spn_files/figure-html/unnamed-chunk-21-1.png" width="672"></p>
 </div>
@@ -318,7 +333,8 @@ ids =<span class="st"> </span><span class="kw">as_ids</span>(path<span class="op
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
         <div id="tocnav">
-      <h2>Contents</h2>
+      <h2 class="hasAnchor">
+<a href="#tocnav" class="anchor"></a>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
 <li><a href="#an-introduction-to-the-spnetwork-package">An introduction to the <code>spnetwork</code> package</a></li>
       <li><a href="#directed-graphs">Directed graphs</a></li>
